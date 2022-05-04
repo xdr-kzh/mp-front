@@ -1,0 +1,99 @@
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+*:focus
+	outline: none !important
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+.text-right
+	text-align: right
+
+.no-wrap
+	flex-wrap: nowrap
+
+b, strong
+	font-weight: bold
+
+.h1,h1
+	text-transform: uppercase
+	font-weight: bold
+	font-size: 50px
+	line-height: 130%
+	margin-bottom: 80px
+
+.introtext
+	font-size: 26px
+
+section
+	padding-top: 110px
+
+
+::-webkit-scrollbar
+	width: 5px
+	height: 5px
+
+::-webkit-scrollbar-button
+	width: 0px
+	height: 0px
+
+::-webkit-scrollbar-thumb
+	background: #bcc9d1
+	border: 0px none rgba(#bcc9d1, .3)
+	border-radius: 50px
+
+::-webkit-scrollbar-thumb:hover
+	background: #bcc9d1
+
+::-webkit-scrollbar-thumb:active
+	background: #bcc9d1
+
+::-webkit-scrollbar-track
+	background: rgba(#bcc9d1, .3)
+	border: 0px none rgba(#bcc9d1, .3)
+	border-radius: 50px
+
+::-webkit-scrollbar-track:hover
+	background: rgba(#bcc9d1, .3)
+
+::-webkit-scrollbar-track:active
+	background: rgba(#bcc9d1, .3)
+
+::-webkit-scrollbar-corner
+	background: transparent
+
+
+.fancybox-slide--html .fancybox-close-small
+	color: #bcc9d1
+	padding: 10px
+	right: 40px
+	top: 40px
+	transform: scale(1.6)
